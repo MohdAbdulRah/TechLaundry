@@ -120,8 +120,10 @@
 
           </div>
 
+
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="https://api.web3forms.com/submit" method="POST" role="form" data-aos="fade-up" data-aos-delay="200">
+              <input type="hidden" name="access_key" value="7423e80a-6eea-40ae-8002-5ea2dab101e9">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -140,14 +142,16 @@
                   <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
                 </div>
 
-                <div class="col-md-12 text-center">
+                <!-- <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                  <button type="submit">Send Message</button>
-                </div>
-
+                 
+                </div> -->
+                <div class="col-md-12 text-center">
+                <button type="submit" type="button" class="btn btn-danger">Send Message</button>
+              </div>
               </div>
             </form>
           </div><!-- End Contact Form -->
